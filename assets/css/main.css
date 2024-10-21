@@ -131,7 +131,8 @@ body {
     }
 
     .column-item {
-        width: 50%;
+        width: 100%;
+        text-align: center;
     }
 
     /* feature */
