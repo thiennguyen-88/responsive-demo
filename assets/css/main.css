@@ -98,15 +98,63 @@ body {
 }
 
 /* responsive */
-/* for mobile */
+/* for tablet and mobile:width < 1024px */
+@media only screen and (max-width:63.9375em) {
+    .main__product {
+        flex-direction: column-reverse;
+    }
+
+    .main__product-info {
+        width: 100%;
+    }
+
+    .main__product-desc {
+        display: none;
+    }
+}
+
+/* for mobile: nhỏ hơn 740px*/
 @media only screen and (max-width:46.1875em) {
+    /* product */
+    .main__product-img {
+        width: 95%;
+        padding-top: 85%;
+    }
+
+    /* cours */
+    .column-layout__container {
+        width: 100%;
+    }
+
+    .column-layout__category {
+        display: none;
+    }
+
+    .column-item {
+        width: 50%;
+    }
+
+    /* feature */
+    .feature-layout {
+        flex-direction: column;
+    }
 
 }
 
-/* for tablet */
+
+/* for tablet:>=740 and < 1024 */
 @media only screen and (min-width:46.25em) and (max-width:63.9375em) {
+    /* product */
+    .main__product-img {
+        width: 85%;
+        padding-top: 85%;
+    }
 
+    /* cours */
+    .column-item {
+        width: 33.333%;
+    }
 }
 
-/* for mobile and tablet */
+/* for mobile and tablet: < 1024px */
 @media only screen and (max-width:63.9375em)
